@@ -1,0 +1,161 @@
+/* --- RESET GERAL E FUNDO --- */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #8e44ad, #9b59b6);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* --- CONTAINER CENTRAL DAS PÁGINAS --- */
+.container {
+  max-width: 500px;
+  width: 90%;
+  padding: 30px;
+  margin: 60px auto;
+  border-radius: 18px;
+  background-color: rgba(255, 255, 255, 0.07);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(8px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* --- TITULO DAS PÁGINAS --- */
+h2 {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+/* --- CAMPOS E BOTÕES --- */
+input.form-control {
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 16px;
+}
+
+button.btn {
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 10px;
+  width: 100%;
+}
+
+/* --- NAVBAR ESTILIZADA COM GRADIENTE --- */
+.navbar {
+  background: linear-gradient(90deg, #8e44ad, #9b59b6, #c471ed, #f64f59);
+  background-size: 400% 400%;
+  animation: gradientFlow 15s ease infinite;
+  border-radius: 0 0 15px 15px;
+  padding: 12px 25px;
+  z-index: 999;
+}
+
+.navbar-brand, .nav-link {
+  color: #fff !important;
+  font-weight: 500;
+}
+
+.navbar .btn {
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+/* --- DARK / LIGHT MODE --- */
+.dark-mode {
+  background: linear-gradient(135deg, #8e44ad, #9b59b6);
+  color: white;
+}
+
+.light-mode {
+  background: #fafafa;
+  color: #333;
+}
+
+.light-mode .container {
+  background-color: white;
+  color: #333;
+}
+
+.light-mode .list-group-item {
+  background-color: #eee;
+  color: #333;
+}
+
+/* --- TOGGLE DE TEMA --- */
+.theme-toggle {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+/* --- ANIMAÇÃO GRADIENTE --- */
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* --- LISTAGENS DE ITENS --- */
+.list-group-item {
+  border-radius: 10px !important;
+  margin-bottom: 8px;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: white;
+  font-weight: 500;
+}
+
+html, body {
+  background: linear-gradient(135deg, #8e44ad, #9b59b6);
+  background-attachment: fixed;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  height: 100%;
+}
+
+.container {
+  max-width: 550px;
+  padding: 30px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 18px;
+  backdrop-filter: blur(10px);
+  color: white;
+}
+
+.navbar {
+  background: linear-gradient(90deg, #8e44ad, #c471ed, #f64f59);
+  animation: gradientFlow 15s ease infinite;
+  border-radius: 0 0 15px 15px;
+}
+
+.navbar-brand, .nav-link {
+  color: white !important;
+  font-weight: bold;
+}
+
+.navbar .btn {
+  border-radius: 12px;
+  font-size: 14px;
+  padding: 6px 12px;
+}
+
+.nav-link {
+  margin-right: 10px;
+}
+
+.navbar .btn {
+  border-radius: 10px;
+  font-size: 14px;
+  padding: 4px 10px;
+  height: 35px;
+  line-height: 1;
+}
